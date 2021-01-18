@@ -12,7 +12,7 @@
 <body>
   <header class="top-header">
     <nav class="top-nav">
-      <a href="https://www.life.illinois.edu/mcb/151/">MCB151 Course Website</a>
+      <a href="https://www.life.illinois.edu/mcb/151/">MCB151 Website</a>
       <a href="https://compass2g.illinois.edu/">Compass2g</a>
       <a href="https://docs.google.com/document/d/1E34khXG042JmhBqQwKhyYJ5707c74B479qq6BztYtuw/edit?usp=sharing">Zoom&Notes</a>
     </nav>
@@ -21,37 +21,41 @@
   <div class="container">
     <header>
       <p>
-        <span>Item</span>
-        <br /> Recommendation
+        <span>Spring2021 MCB151</span>
+        <br /> Evaluation Form
       </p>
     </header>
 
     <section class="main-section">
-      <div id="evaluation-form">
+      <div id="section-form">
         <label for="section">Section:</label>
         <input id="section" name="section" type="text">
-        <label for="positiveFB">Positive Feed Back:</label>
-        <input id="positiveFB" name="positiveFB" type="text">
-        <label for="negativeFB">Negative Feed Back:</label>
-        <input id="negativeFB" name="negativeFB" type="text">
+      </div>
+
+      <div id="evaluation-form">
+        <label for="positiveFB">Positive Feedback:</label>
+        <textarea name="positiveFB" cols="110" rows="20"></textarea>
+        <label for="negativeFB">Negative Feedback:</label>
+        <!-- <input id="negativeFB" name="negativeFB" type="text"> -->
+        <textarea name="positiveFB" cols="110" rows="20"></textarea>
         <button id="submit-btn">Submit</button>
       </div>
 
   <footer>
-    <p>"Spring2021 MCB151 Informal Anonymous TA Evaluation Form"</p>
-    <ul>
-      <li>
+    <p class="title">Spring2021 MCB151 Informal Anonymous TA Evaluation Form</p>
+    <div>
+      <p>
         <p><i class="fa fa-map-o fa-2x"></i></p>
         <p>Xuankun, UIUC</p>
-      </li>
-      <li>
+      </p>
+      <p>
         <p><i class="fa fa-envelope-o fa-2x"></i></p>
         <p>xzeng17@illinois.edu</p>
-      </li>
-    </ul>
+      </p>
+    </div>
   </footer>
   
   <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
-  <script src="scripts/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
