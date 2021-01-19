@@ -22,23 +22,29 @@
     <header>
       <p>
         <span>Spring2021 MCB151</span>
-        <br /> Evaluation Form
+        <br /> In-semester Feedback
       </p>
     </header>
 
     <section class="main-section">
       <div id="section-form">
         <label for="section">Section:</label>
-        <input id="section" name="section" type="text">
+        <!-- <input id="section" name="section" type="text"> -->
+        <select name="section" id="section">
+          <option value="">Please Select</option>
+          <option value="section B">B</option>
+          <option value="section C">C</option>
+        </select>
       </div>
 
       <div id="evaluation-form">
         <label for="positiveFB">Positive Feedback:</label>
-        <textarea name="positiveFB" cols="110" rows="20"></textarea>
+        <textarea id="positiveFB" cols="110" rows="20"></textarea>
         <label for="negativeFB">Negative Feedback:</label>
         <!-- <input id="negativeFB" name="negativeFB" type="text"> -->
-        <textarea name="positiveFB" cols="110" rows="20"></textarea>
+        <textarea id="negativeFB" cols="110" rows="20"></textarea>
         <button id="submit-btn">Submit</button>
+        <div id="status-message"></div>
       </div>
 
   <footer>
@@ -56,6 +62,6 @@
   </footer>
   
   <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
-  <script src="main.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
