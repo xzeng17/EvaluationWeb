@@ -18,22 +18,17 @@
         }
         disableSubmitBtn('submit-btn');
         var url = "https://evaluationform.herokuapp.com/submitevaluation";
+        var proxy = "https://cors-anywhere.herokuapp.com/";
         var req = JSON.stringify({
             section: section,
             positiveFB: positiveFB,
             negativeFB: negativeFB,
         });
 
-        ajax("POST", url, req, 
-            function(res) {
-                var result = JSON.parse(res);
+        ajax("POST", proxy+url, req, 
+            function(result) {
                 console.log(result);
-                if (result.status === 'OK') {
-                    showSubmitMessage('Submission completed successfully!');
-                } else {
-                    enableSubmitBtn('submit-btn');
-                    showSubmitMessage('Something wrong with backend server, please contact Xuankun.');
-                }
+                showSubmitMessage(result);
             },
 
             function() {
@@ -72,7 +67,7 @@
         // xhr.setRequestHeader('Access-Control-Allow-Methods', method);
         // xhr.setRequestHeader('Access-Control-Allow-Headers','X-Auth-Token,Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
         // xhr.send();
-        console.log(xhr);
+   
         xhr.onload = function() {
             if (xhr.status === 200) {
                 successCallback(xhr.responseText);
