@@ -62,11 +62,6 @@
     function ajax(method, url, data, successCallback, errorCallback) {
         var xhr = new XMLHttpRequest();
         xhr.open(method, url, true);
-        // xhr.setRequestHeader("X-Auth-Token","api-key 1234567890");
-        // xhr.setRequestHeader('Access-Control-Allow-Origin','*');
-        // xhr.setRequestHeader('Access-Control-Allow-Methods', method);
-        // xhr.setRequestHeader('Access-Control-Allow-Headers','X-Auth-Token,Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
-        // xhr.send();
    
         xhr.onload = function() {
             if (xhr.status === 200) {
