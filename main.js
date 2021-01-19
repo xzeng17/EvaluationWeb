@@ -25,7 +25,7 @@
             negativeFB: negativeFB,
         });
 
-        ajax("POST", proxy+url, req, 
+        ajax("POST", url, req, 
             function(result) {
                 console.log(result);
                 showSubmitMessage(result);
