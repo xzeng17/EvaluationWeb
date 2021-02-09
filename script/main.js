@@ -19,4 +19,4 @@ function loadTemplate(templateString) {
 }
 
 // init
-loadTemplate("templateCourseDescription");
+loadTemplate("templateTAnotes");
