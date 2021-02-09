@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(147, 203, 240);
+}
+
+.top-header {
+    align-items: center;
+    background: lightskyblue;
+    box-shadow: 0px 2px 10x #333333;
+    display: flex;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.top-nav {
+    flex: 1;
+    text-align: center;
+}
+
+.top-nav a{
+    color: #F9F9F9;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 80px;
+    text-decoration: none;
+}
+
+.top-nav a:hover{
+    color: #0b023b;
+    /* font-weight: 400;
+    font-size: 1.5em;
+    margin: 80px;
+    text-decoration: none; */
+}
+
+
+.container{
+    margin: 60px auto;
+    max-width: 1000px;
+    min-width: 600px;
+}
+
+.container>header {
+    align-items: center;
+    display: flex;
+    height: 120px;
+}
+
+.container>header p{
+    border-left: 1px solid #FFFFFF;
+    font-weight: 200;
+    font-size: 1.5em;
+    line-height: 1em;
+    /* margin-left: 50px; */
+    padding-left: 5px;
+}
+
+.main-section {
+    background: rgb(180, 218, 241);
+}
+
+iframe[evaluationForm] {
+    text-align: center;
+    border: none;
+    height: 850px;
+    width: 820px;
+    padding: 100px;
+}
+
+footer {
+    background:lightsteelblue;
+    font-size: 0.8em;
+    height: 100px;
+    position: relative;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer div a {
+    flex: 1;
+    text-align: center;
+}
+
+.bottonURL {
+    align-items: center;
+    display: flex;
+}
+
+footer p.title {
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+footer div {
+    align-items: center;
+    display: flex;
+}
+
+footer div p {
+    flex: 1;
+}
