@@ -1,0 +1,27 @@
+.container> header {
+    text-align: center;
+}
+
+#section-form {
+    margin: 0px auto;
+    overflow: auto;
+    padding-top: 20px;
+    width: 800px;
+}
+
+#evaluation-form {
+    margin: 0px auto;
+    overflow: auto;
+    width: 800px;
+}
+
+#evaluation-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#evaluation-form button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
