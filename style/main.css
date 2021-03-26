@@ -69,6 +69,14 @@ iframe[iframe] {
     padding: 100px;
 }
 
+iframe[TANotes] {
+    text-align: center;
+    border: none;
+    height: 600px;
+    width: 820px;
+    padding: 100px;
+}
+
 iframe[evaluationForm] {
     text-align: center;
     border: none;
